@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#0b0b10">
+    <title>Visual Gallery</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="hero">
+        <span class="eyebrow">A curated collection</span>
+        <h1>Visual Gallery</h1>
+        <p>Explore beautiful moments, places, and details.</p>
+    </header>
+
+    <nav class="filters" aria-label="Filter gallery">
+        <button class="active" data-filter="all">All</button>
+        <button data-filter="nature">Nature</button>
+        <button data-filter="architecture">Architecture</button>
+        <button data-filter="people">People</button>
+    </nav>
+
+    <main class="gallery" aria-label="Image gallery">
+        <article class="gallery-item" data-category="nature" data-title="Mountain Escape">
+            <img src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=1000&q=85" alt="Snow-capped mountain peaks">
+            <div class="image-info"><h3>Mountain Escape</h3><p>Nature · 01</p></div>
+        </article>
+        <article class="gallery-item" data-category="architecture" data-title="Modern Lines">
+            <img src="https://images.unsplash.com/photo-1487958449943-2429e8be8625?w=1000&q=85" alt="Minimal modern white architecture">
+            <div class="image-info"><h3>Modern Lines</h3><p>Architecture · 02</p></div>
+        </article>
+        <article class="gallery-item" data-category="people" data-title="Quiet Moments">
+            <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=1000&q=85" alt="Portrait of a woman">
+            <div class="image-info"><h3>Quiet Moments</h3><p>People · 03</p></div>
+        </article>
+        <article class="gallery-item" data-category="nature" data-title="Into the Woods">
+            <img src="https://images.unsplash.com/photo-1448375240586-882707db888b?w=1000&q=85" alt="Sunlight filtering through a forest">
+            <div class="image-info"><h3>Into the Woods</h3><p>Nature · 04</p></div>
+        </article>
+        <article class="gallery-item" data-category="architecture" data-title="City Geometry">
+            <img src="https://images.unsplash.com/photo-1511818966892-d7d671e672a2?w=1000&q=85" alt="Contemporary building facade">
+            <div class="image-info"><h3>City Geometry</h3><p>Architecture · 05</p></div>
+        </article>
+        <article class="gallery-item" data-category="people" data-title="Golden Hour">
+            <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=1000&q=85" alt="Portrait of a man outdoors">
+            <div class="image-info"><h3>Golden Hour</h3><p>People · 06</p></div>
+        </article>
+        <article class="gallery-item" data-category="nature" data-title="Ocean Blue">
+            <img src="https://images.unsplash.com/photo-1500375592092-40eb2168fd21?w=1000&q=85" alt="Ocean waves meeting the shore">
+            <div class="image-info"><h3>Ocean Blue</h3><p>Nature · 07</p></div>
+        </article>
+        <article class="gallery-item" data-category="architecture" data-title="Urban Perspective">
+            <img src="https://images.unsplash.com/photo-1511818966892-d7d671e672a2?w=1000&q=85" alt="Sculptural city architecture">
+            <div class="image-info"><h3>Urban Perspective</h3><p>Architecture · 08</p></div>
+        </article>
+        <article class="gallery-item" data-category="nature" data-title="Desert Calm">
+            <img src="https://images.unsplash.com/photo-1509316785289-025f5b846b35?w=1000&q=85" alt="Warm desert sand dunes">
+            <div class="image-info"><h3>Desert Calm</h3><p>Nature · 09</p></div>
+        </article>
+    </main>
+
+    <div class="lightbox" aria-hidden="true" role="dialog" aria-label="Image viewer">
+        <button class="close" aria-label="Close image viewer">&times;</button>
+        <button class="prev" aria-label="Previous image">&#10094;</button>
+        <img class="lightbox-image" src="" alt="">
+        <button class="next" aria-label="Next image">&#10095;</button>
+        <p class="caption"></p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
